@@ -3,6 +3,7 @@ Information About the Post
   <li> <%= author.name %></li>
   <li> <%= author.hometown %></li>
 </ul> -->
-<%= render 'authors/author' %>
+<!-- <%= render 'authors/author' %> -->
+<%= render partial: "authors/author", locals: {post_author: @author} %>
 <%= @post.title %>
 <%= @post.content %>
